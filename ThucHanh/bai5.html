@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 5</title>
+</head>
+<body>
+<script>
+    let arrayStar=['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    let arrayConstellation=['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let index;
+    let str=prompt("Moi nhap vao:");
+    alert(checkStar(str));
+    function checkStar(star) {
+        for (let i=0;i<arrayStar.length;i++){
+            if (arrayStar[i]===star){
+                index=i;
+            }
+        }
+       return arrayConstellation[index];
+    }
+</script>
+</body>
+</html>
